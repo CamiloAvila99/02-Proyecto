@@ -1,0 +1,333 @@
+/*FUENTES PERSONALIZADAS*/
+@font-face{
+  font-family: 'BebasNeue';
+  src: url(public/fonts/BebasNeue.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'TrebuchetMS';
+  src: url(public/fonts/TrebuchetMS.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*ESTILOS GENERALES*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*ESTILOS GENERALES TITULO PRINCIPAL*/
+.contenedor-principal{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.header h1{
+  display: block;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'TrebuchetMS';
+  font-size: 90px;
+  background-color: #dddd;
+  text-shadow: 3px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*ESTILO CONTENEDOR DEL FORMULARIO Y ESTADO DE LAS TAREAS*/
+.form-est-tareas{
+  display: flex;
+
+  width: 100%;
+  height: 320px;
+}
+
+/*ESTILOS DEL FORMULARIO CREAR TAREA*/
+.crear-tarea{
+  width: 50%;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.crear-tarea h2,
+.titulo-estado{
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'BebasNeue';
+  font-size: 45px;
+  letter-spacing: 1px;
+  background-color: #dddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-shadow: 3px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.formulario h3{
+  display: block;
+  width: 80%;
+  height: 60px;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'BebasNeue';
+  font-size: 30px;
+}
+
+.formulario .campo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.formulario label{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.formulario .campo input[type='text']{
+  width: 30%;
+  padding: 7px;
+  margin-left: 10px;
+  border-radius: 7px;
+  background-color: #eee;
+}
+
+.formulario .campo input[type='text']::placeholder{
+  color: black;
+}
+
+.opciones{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.opcion{
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.opcion label{
+  font-weight: lighter;
+}
+
+input[type='radio']{
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.formulario input[type='submit']{
+  display: block;
+  width: 130px;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'BebasNeue';
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+
+.formulario input[type='submit']:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+/*ESTILOS DEL CONTENEDO DE LOS ESTADO DE LAS TAREAS*/
+.estado-tareas{
+  width: 100%;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.contenedor-estado-tareas{
+  display: flex;
+  width: 100%;
+  height: 240px;
+}
+
+.tareas-completas,
+.tareas-incompletas{
+  width: 50%;
+  height: 230px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: scroll;
+}
+
+.tareas-completas h3,
+.tareas-incompletas h3{
+  display: block;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-family: 'BebasNeue';
+  font-size: 22px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #dddd;
+  text-shadow: 3px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tareas-completas ol li,
+.tareas-incompletas ol li{
+  font-family: Arial;
+  padding: 5px;
+}
+
+/*ESTILOS DEL CONTENEDOR DE TAREAS*/
+.contenedor-tareas{
+  width: 98%;
+  height: auto;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.contenedor-tareas h2{
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-family: 'BebasNeue';
+  font-size: 45px;
+  background-color: #ddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-shadow: 3px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subcontenedor-tareas{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tareas{
+  width: 25%;
+  height: auto;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.tareas h3{
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'BebasNeue';
+  font-size: 40px;
+  background-color: #dddd;
+  text-shadow: 3px 6px 5px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.lista-tareas{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.lista-tareas:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.lista-tareas h4{
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+  font-family: 'BebasNeue';
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.lista-tareas ul li{
+  font-family: Arial;
+  font-size: 13px;
+  text-align: center;
+  list-style: none;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.botones button{
+  display: block;
+  padding: 7px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  font-family: 'TrebuchetMS';
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 300ms;
+}
+
+.botones button:hover{
+  background-color: #ddd;
+}
+
+.botones input[type='radio']{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.botones label{
+  font-family: Arial;
+  font-size: 13px;
+}
+
+.no-tareas{
+  display: block;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-family: 'BebasNeue';
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+/*ESTILOS DEL CONTENEDOR DE ESTADOS DE LAS TAREAS*/
+
+.estado-tareas{
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+}
